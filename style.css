@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+h1 {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-success {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-warning {
+    background: #f39c12;
+    color: white;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.table-section {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Força distribuição uniforme das colunas */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden; /* Evita quebra de layout */
+    text-overflow: ellipsis; /* Adiciona "..." para texto muito longo */
+    white-space: nowrap; /* Mantém texto em uma linha */
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    font-weight: bold;
+}
+
+/* Define larguras específicas para cada coluna */
+th:nth-child(1), td:nth-child(1) { /* ID */
+    width: 15%;
+    text-align: center;
+}
+
+th:nth-child(2), td:nth-child(2) { /* Nome */
+    width: 35%;
+}
+
+th:nth-child(3), td:nth-child(3) { /* CPF */
+    width: 20%;
+}
+
+th:nth-child(4), td:nth-child(4) { /* Ações */
+    width: 30%;
+    text-align: right;
+    overflow: visible; /* Permite que os botões apareçam */
+    white-space: normal; /* Permite quebra de linha se necessário */
+    padding-right: 15px; /* Espaçamento consistente */
+}
+
+/* Ajuste para a coluna ID */
+td:first-child {
+    text-align: center; /* ID centralizado */
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Ajuste para a coluna de ações */
+td:last-child {
+    text-align: right;
+    padding-right: 15px;
+    overflow: visible; /* Permite que os botões apareçam */
+    white-space: normal; /* Permite quebra de linha se necessário */
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end; /* Alinha botões à direita */
+    flex-wrap: nowrap; /* Impede quebra de linha */
+    margin-left: auto; /* Empurra os botões para a direita */
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close:hover {
+    color: white;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.modal-actions .btn {
+    margin-left: 10px;
+}
