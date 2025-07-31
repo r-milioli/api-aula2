@@ -17,7 +17,7 @@ Um sistema completo de **CRUD (Create, Read, Update, Delete)** para cadastro de 
 
 <div align="center">
 
-![Demonstração do Sistema](https://i.imgur.com/example1.png)
+![Demonstração do Sistema](images/principal.png)
 
 *Sistema de Cadastro de Pessoas - Interface completa e funcional*
 
@@ -168,20 +168,20 @@ fetch('http://localhost:3002/cliente')
 <div align="center">
 
 #### 📋 Tela Principal - Lista de Clientes
-![Tela Principal](https://i.imgur.com/example1.png)
+![Tela Principal](images/principal.png)
 *Interface principal com formulário de cadastro e tabela de clientes*
 
 #### ✏️ Modal de Edição
-![Modal de Edição](https://i.imgur.com/example2.png)
+![Modal de Edição](images/modal_de_edicao.png)
 *Modal para editar dados do cliente com campos preenchidos*
 
 #### 🗑️ Confirmação de Exclusão
-![Confirmação de Exclusão](https://i.imgur.com/example3.png)
+![Confirmação de Exclusão](images/confirmacao_de_exclusao.png)
 *Pop-up de confirmação antes de excluir um cliente*
 
-#### 📝 Validação de Campos
-![Validação](https://i.imgur.com/example4.png)
-*Validação de campos obrigatórios com feedback visual*
+#### 📝 Tabelas Preenchidas
+![Tabelas Preenchidas](images/tabelas_preenchidas.png)
+*Tabela com dados cadastrados e botões de ação*
 
 </div>
 
